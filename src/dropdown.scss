@@ -4,6 +4,7 @@
 @import "./popper";
 
 @include b(dropdown) {
+  outline:0;
   display: inline-block;
   position: relative;
   color: $--color-text-regular;
