@@ -67,7 +67,7 @@
   top: 0;
   left: 0;
   z-index: 10;
-  padding: 10px 0;
+  padding: $--dropdown-padding 0;
   margin: 5px 0;
   background-color: $--color-white;
   border: 1px solid $--border-color-lighter;
@@ -77,7 +77,7 @@
   @include e(item) {
     list-style: none;
     line-height: 36px;
-    padding: 0 20px;
+    padding: $--dropdown-item-padding 20px;
     margin: 0;
     font-size: $--font-size-base;
     color: $--color-text-regular;
@@ -93,7 +93,7 @@
     }
 
     @include m(divided) {
-      $divided-offset: 6px;
+      $divided-offset: $--dropdown-divided;
 
       position: relative;
       margin-top: $divided-offset;
