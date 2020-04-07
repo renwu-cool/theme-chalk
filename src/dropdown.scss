@@ -4,7 +4,6 @@
 @import "./popper";
 
 @include b(dropdown) {
-  outline:0;
   display: inline-block;
   position: relative;
   color: $--color-text-regular;
@@ -57,9 +56,9 @@
   }
 
   .el-dropdown-selfdefine { // 自定义
-    &:focus:active, &:focus:not(.focusing) {
-      outline-width: 0;
-    }
+    outline-width: 0;
+    user-select: none;
+    cursor: pointer;
   }
 }
 
